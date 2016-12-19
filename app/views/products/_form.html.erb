@@ -16,9 +16,8 @@
 					<%= f.number_field :price, :step => "0.1", class: 'form-control input-lg' %>
 				</div>
 		
-				<div class="field">
-				  <%= f.label "Area of Expertise" %><br />
-				  <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |b| %>
+				<div class="field">	
+				  <%= f.collection_check_boxes :categories, Category.all, :id, :name do |b| %>
 				    <div class="collection-check-box">
 				      <%= b.check_box %>
 				      <%= b.label %>
