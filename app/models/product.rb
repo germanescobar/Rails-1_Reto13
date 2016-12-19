@@ -11,5 +11,5 @@
 
 class Product < ApplicationRecord
 	has_many :types
-	has_many :categorys, through: :types
+	has_many :categories, through: :types
 end
