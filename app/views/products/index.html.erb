@@ -22,8 +22,8 @@
 					<td><%= producto.name %></td>
 					<td><%= producto.price %></td>
 					<td>
-						<% producto.categorys.each do |categoria|%>
-							<% if producto.categorys.last == categoria %>
+						<% producto.categories.each do |categoria|%>
+							<% if producto.categories.last == categoria %>
 								<%= categoria.name %>
 							<% else %>
 								<%= categoria.name + ","%>
